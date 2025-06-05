@@ -1,51 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Simple EHR System</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <title>Simple EHR System</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Electronic Health Record (EHR) System</h1>
+    <div class="background"></div>
+    <div class="container">
+        <h1>Electronic Health Record (EHR)</h1>
 
-    <form class="ehr-form">
-      <label>Patient Name:
-        <input type="text" name="patientName" required />
-      </label>
+        <div class="photo">
+            <img src="https://via.placeholder.com/120" alt="Patient Photo">
+        </div>
 
-      <label>Age:
-        <input type="number" name="age" required />
-      </label>
+        <form>
+            <label>Patient Name:</label>
+            <input type="text" value="John Doe">
 
-      <label>Gender:
-        <select name="gender">
-          <option>Male</option>
-          <option>Female</option>
-          <option>Other</option>
-        </select>
-      </label>
+            <label>Age:</label>
+            <input type="number" value="45">
 
-      <label>Diagnosis:
-        <input type="text" name="diagnosis" required />
-      </label>
+            <label>Gender:</label>
+            <input type="text" value="Male">
 
-      <label>Prescription:
-        <textarea name="prescription" rows="4"></textarea>
-      </label>
+            <label>Medical History:</label>
+            <div class="history-box">
+                <ul>
+                    <li>2020 - Diagnosed with Type 2 Diabetes</li>
+                    <li>2021 - Undergone gallbladder surgery</li>
+                    <li>2022 - Treated for hypertension</li>
+                    <li>2023 - COVID-19 recovery, no complications</li>
+                </ul>
+            </div>
 
-      <button type="submit">Save Record</button>
-    </form>
+            <label>Allergies:</label>
+            <textarea>Penicillin, Dust</textarea>
 
-    <div class="record-display">
-      <h2>Patient Records</h2>
-      <p><strong>Name:</strong> John Doe</p>
-      <p><strong>Age:</strong> 30</p>
-      <p><strong>Gender:</strong> Male</p>
-      <p><strong>Diagnosis:</strong> Hypertension</p>
-      <p><strong>Prescription:</strong> Medication A - daily</p>
+            <label>Doctor's Notes:</label>
+            <textarea>Monitor blood sugar and blood pressure monthly. Encourage daily walks.</textarea>
+
+            <button type="submit">Save Record</button>
+        </form>
     </div>
-  </div>
 </body>
 </html>
