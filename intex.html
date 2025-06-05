@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simple EHR System</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #e3f2fd, #fff);
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    h1, h2 {
+      color: #2c3e50;
+      text-align: center;
+    }
+
+    .form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .form label {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .form input,
+    .form select,
+    .form textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    .form button {
+      margin-top: 10px;
+      padding: 12px;
+      background-color: #2196f3;
+      border: none;
+      color: white;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .form button:hover {
+      background-color: #1976d2;
+    }
+
+    .record-display {
+      margin-top: 30px;
+      background-color: #f1f8ff;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .record-display p {
+      margin: 8px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Electronic Health Record (EHR) System</h1>
+
+    <form class="form">
+      <label>Patient Name:
+        <input type="text" name="patientName" required />
+      </label>
+
+      <label>Age:
+        <input type="number" name="age" required />
+      </label>
+
+      <label>Gender:
+        <select name="gender">
+          <option>Male</option>
+          <option>Female</option>
+          <option>Other</option>
+        </select>
+      </label>
+
+      <label>Diagnosis:
+        <input type="text" name="diagnosis" required />
+      </label>
+
+      <label>Prescription:
+        <textarea name="prescription" rows="4"></textarea>
+      </label>
+
+      <button type="submit">Save Record</button>
+    </form>
+
+    <div class="record-display">
+      <h2>Patient Records</h2>
+      <p><strong>Name:</strong> John Doe</p>
+      <p><strong>Age:</strong> 30</p>
+      <p><strong>Gender:</strong> Male</p>
+      <p><strong>Diagnosis:</strong> Hypertension</p>
+      <p><strong>Prescription:</strong> Medication A - daily</p>
+    </div>
+  </div>
+</body>
+</html>
